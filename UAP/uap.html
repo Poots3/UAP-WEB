@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        table th, td{
+            border: 1px solid black;
+        }
+        th, td{
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>DATA BARANG</h2>
+    <Table id="barangTable">
+        <tr>
+            <th>Kode</th>
+            <th>Barang</th>
+            <th>Harga</th> 
+        </tr>
+    </Table>
+
+    <h2>Inputan User</h2>
+    <form onsubmit="tambahTransaksi(event)">
+        <input type="text" id="kodeInput" placeholder="masukan kode barang..." required>
+        <label for="kodeInput">Kode Barang</label><br>
+        <input type="number" id="quantityInput" min="1" placeholder="masukan jumlah barang..." required>
+        <label for="quantityInput">Jumlah</label><br>
+        <button>submit</button>
+    </form>
+</body>
+    <script src="app.js"></script>
+</html>
